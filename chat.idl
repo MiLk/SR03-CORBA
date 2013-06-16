@@ -1,0 +1,13 @@
+// IDL : Hello.idl
+
+interface Chatter
+{
+  wstring getTheDate();
+  void receive(in string msg);
+};
+interface ChatService
+{
+  wstring getTheDate();
+  void newChatRoom(in string chatroom);
+  void send(in string chatroom, in string msg);
+};
